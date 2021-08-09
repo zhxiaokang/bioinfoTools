@@ -1,11 +1,13 @@
 #!/bin/python
 
-# function:
-	extract sequence from FASTQ files by the ID
-# usage:
-#	two input arguments:
-		id: starting with @
-		fn: file name (a fastq file)
+'''
+function:
+    extract sequence from FASTQ files by the ID
+usage:
+    two input arguments:
+        id: sequence ID starting with @
+        fn: file name (a fastq file)
+'''
 
 import sys
 
@@ -19,5 +21,5 @@ def subseq(id, fn):
 if __name__ == "__main__":
     id = sys.argv[1]
     fn = sys.argv[2]
-    print(id, fn)
+    
     print subseq(id, fn)
