@@ -4,6 +4,8 @@
 function:
     extract sequence from FASTQ files by the ID
 usage:
+    python subseq.py id fn
+    
     two input arguments:
         id: sequence ID starting with @
         fn: file name (a fastq file)
